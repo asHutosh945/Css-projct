@@ -1,0 +1,101 @@
+body{
+    font-family: 'Vollkorn', serif;
+    border-left: 5px solid rgb(35, 202, 202);
+    border-right: 5px solid rgb(35, 202, 202);
+    background-color:rgb(230, 235, 241); 
+}
+
+
+
+
+.hero_image{
+    background: url(images.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+}
+.hero_wrapper{
+    color:white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    
+    transform: translate(-50%,-50%);
+}
+.heading{
+    text-align: center;
+    font-size: 3rem;
+    opacity:0.5;
+    color:black;
+    
+    
+}
+p{
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+}
+.form_code{
+    text-align: center;
+}
+
+input[type=text]{
+    width: 87%;
+    margin-top: 0.6rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:30px 50px 30px;
+    outline:none;
+    padding:0.5rem;
+    border:3px solid rgb(156, 146, 146);
+    
+}
+.button{
+    text-align: center;
+    margin-top:1rem;
+    width:30%;
+    background-color: rgb(24, 112, 112);
+    
+   
+    color:rgb(212, 203, 221);
+    border:1px solid burlywood;
+    outline:none;
+    padding:0.6rem;
+    border-radius:1.2rem;
+    opacity:0.7;
+   
+}
+.button1:hover{
+    background-color: rgb(23, 184, 149);
+    box-shadow: 1px 2px 4px #eb070780;
+    animation: effect 1.2s linear 3 alternate;
+    opacity:1;
+    
+}
+@keyframes effect{
+    0%{background-color: rgb(233, 168, 71); width:30%; color:black}
+    25%{background-color: blanchedalmond; width:32%;color:rgb(12, 59, 59)}
+    50%{background-color: rgb(79, 221, 74); width:35%;color:rgb(73, 51, 124)}
+    75%{background-color: rgb(169, 153, 226); width:38%;color:rgb(179, 86, 86)}
+    100%{background-color: rgb(243, 134, 196); width:40%;color:rgb(131, 51, 51)}
+}
+.heading:hover{
+    animation: head 1.5s linear 2 alternate;
+    opacity:1;
+}
+
+
+@keyframes head{
+    25%{font-size:2.5rem;color:lightcoral}
+    50%{font-size:2.8rem;color:burlywood}
+    75%{font-size:3.2rem;color:rebeccapurple}
+    100%{font-size:3.4rem;color:royalblue}
+}
+.resp{
+    opacity:0.6;
+    
+}
+img:hover{
+    opacity:1;
+}
